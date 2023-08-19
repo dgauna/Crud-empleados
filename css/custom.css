@@ -1,0 +1,331 @@
+﻿.PrincipalBackGround {
+    background: url(../img/LogoPrincipal.jpg);
+    background-color: #cccccc;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.LoginLogo {
+    background: url(../img/LavaFreshLogo.jpg);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+/*SIDEBAR MENU*/
+.simplebar-mask {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    /*right: 0;*/
+    direction: inherit;
+    overflow: hidden;
+    width: auto !important;
+    height: auto !important;
+    z-index: 0;
+}
+
+/*NOTIFICACIONES*/
+.btnNotification {
+    min-height: 10px !important;
+    font-size: 10px !important;
+}
+
+.notifications-table {
+    max-height: 600px;
+    width: 800px
+}
+
+
+/*PAGE WRAPPER*/
+.page-wrapper {
+    margin-left: 15%; /* Same as the width of the sidenav */
+    overflow: auto;
+    /*height: 10vh;*/
+    /*left: 0;*/
+    position: relative;
+    width: 100% !important;
+}
+
+.max-pagewrapper {
+    margin-left: 70px;
+}
+
+.wrapper-content {
+    padding-bottom: 2.5rem; /* Footer height */
+}
+
+.ibox {
+    margin-bottom: 4.2em;
+}
+
+/*SIDENAV*/
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.nav-header {
+    padding: 1em 2em;
+}
+
+/*FOOTER*/
+.footer {
+    /*bottom: auto;*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+/*SPINNER*/
+#modalSpinner {
+    z-index: 2060 !important;
+}
+
+.second-backdrop {
+    z-index: 2055 !important;
+}
+
+
+/*.modal:nth-of-type(last) {
+    z-index: 2060 !important;
+}*/
+/*.modal-backdrop.show:nth-of-type(last) {
+    z-index: 2055 !important;
+}*/
+
+/*.modal-backdrop {
+    visibility: hidden !important;
+}
+
+.modal.in {
+    background-color: rgba(0,0,0,0.5);
+}
+*/
+
+
+.noPaddingTable .table > tfoot > tr > td {
+    padding: 0px !important;
+}
+
+.FixedHeader {
+    position: fixed;
+    font-weight: bold;
+}
+
+.fixedHeader2 {
+    font-weight: bold;
+    position: absolute;
+    background-color: #006699;
+    color: #ffffff;
+    height: 50px;
+    top: expression(Sys.UI.DomElement.getBounds(document.getElementById("NotificationsGrid")).y-25);
+}
+
+.GVFixedHeader {
+    font-weight: bold;
+    background-color: Green;
+    position: relative;
+    top: expression(this.parentNode.parentNode.parentNode.scrollTop-1);
+}
+
+tbodynotfixed {
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.nobordergrid {
+    border: 2px solid white;
+}
+
+/*
+    ADMIN FARM
+*/
+.width-300 {
+    width: 150px;
+}
+
+/*
+    Tabla Bitácora
+*/
+
+.bitacora {
+    border-collapse: collapse;
+    width: auto;
+    margin: 0 1em;
+    font-size: 1vw;
+    /*border: 2px solid #e9e9e9;*/
+}
+
+    .bitacora tr:last-child td:first-child {
+        border-bottom-left-radius: 10px;
+    }
+
+    .bitacora tr:last-child td:last-child {
+        border-bottom-right-radius: 10px;
+    }
+
+    .bitacora th {
+        padding: 0.3em;
+        border-top: none !important;
+    }
+
+    .bitacora th, .bitacora tr:nth-child(5) {
+        border-bottom: 2px solid darkgray;
+    }
+
+    .bitacora td, th {
+        text-align: center;
+        padding: 0.3em !important;
+    }
+
+    .bitacora input {
+        border: 1px solid #dddddd;
+        background-color: transparent;
+        border-color: transparent;
+        height: 1.4em;
+    }
+
+    .bitacora tr:nth-child(even) {
+        background-color: ghostwhite;
+    }
+
+    .bitacora td:nth-child(1) {
+        padding: 0 1em;
+    }
+
+.borderlessInput {
+    border: none !important;
+}
+
+.fixControl {
+    border-bottom: 1px solid #e7eaec;
+}
+
+.red-input {
+    color: red;
+    border-color: red
+}
+
+.fs-medium {
+    font-size: medium;
+}
+
+.egg-disabled {
+    height: 1.5em !important;
+    background-color: #e9ecef !important;
+}
+/*
+    CSS GRID
+*/
+.gridWrapper {
+    display: grid;
+    grid-template-columns: 36% 32% 32%;
+    grid-gap: 0.6em;
+    grid-auto-rows: minmax(1.5em,1.5em);
+    padding: 1em 2em 1em 1em;
+    background-color: #f3f3f3;
+    font-size: 0.9vw;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+    .gridWrapper > div {
+        height: 1em;
+    }
+
+.gridWrapperEggs {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% !important;
+    grid-gap: 0.6em;
+    grid-auto-rows: minmax(1.5em,1.5em);
+    padding: 1.2em 3rem 2em 0;
+    background-color: ghostwhite;
+    font-size: 0.9vw;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.gridWrapper > div {
+    height: 1em;
+    text-align: right;
+}
+
+.gridTitleC2 {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.gridInput {
+    height: 1.5em !important;
+    background-color: white !important;
+}
+
+.gridDouble {
+    grid-column-end: span 2;
+}
+/*
+    Encabezados de las páginas
+*/
+.wrapper-content {
+    padding: 1em 0 0 0;
+}
+
+.page-heading {
+    padding: 0.5em;
+}
+
+h2 {
+    margin: 0;
+}
+/*
+    GRILLAS
+*/
+.width-4b {
+    width: 14em;
+}
+
+.width-3b {
+    width: 13em;
+}
+
+.width-2b {
+    width: 8em;
+}
+
+i.fa.fa-bell.fa-lg {
+    color: #1ab394;
+}
+
+    i.fa.fa-bell.fa-lg:hover {
+        opacity: 0.6;
+        transform: initial;
+    }
+/*
+    PARAMETROS
+*/
+.width-descrip-param {
+    overflow: auto;
+    max-width: 29em;
+}
